@@ -1,0 +1,30 @@
+.jumbotron {
+  margin-top: 32px;
+  padding: 64px 32px;
+  border-radius: 5px;
+  background-color: #e9ecef;
+
+  &Title {
+    font-size: 56px;
+    margin-bottom: 8px;
+    @media (max-width: 575px) {
+      font-size: 40px;
+    }
+  }
+
+  &Text {
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  &Project {
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-top: 32px;
+    font-size: 14px;
+    &Link {
+      color: var(--accent);
+      text-decoration: underline;
+    }
+  }
+}

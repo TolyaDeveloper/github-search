@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  min-height: 50px;
+  background-color: var(--accent);
+}
+
+.logo {
+  margin-right: 32px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  @media (max-width: 400px) {
+    font-size: 18px;
+  }
+}
+
+.listInner {
+  display: flex;
+  &Item + &Item {
+    margin-left: 16px;
+  }
+  &Link {
+    color: #c8d6e5;
+    transition: color 0.2s ease;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.activeLink {
+  color: rgba(255, 255, 255, 1);
+}

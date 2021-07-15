@@ -1,0 +1,102 @@
+.userCard {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 30px;
+  margin-top: 30px;
+  padding: 10px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+  @media (max-width: 575px) {
+    grid-template-columns: minmax(auto, 320px);
+  }
+  &Avatar {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  &Name {
+    margin-bottom: 10px;
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+  &BioTitle {
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  &BioText {
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+  }
+  &GithubLink {
+    margin-bottom: 15px;
+    padding: 0 10px;
+    height: 35px;
+    background-color: var(--accent);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 5px;
+    color: #fff;
+    transition: opacity 0.2s ease;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+  &AboutList {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+  }
+  &AboutItem {
+    margin-bottom: 15px;
+  }
+  &StatsList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &StatsItem {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  &StatsItem {
+    margin-right: 15px;
+  }
+  &Subscribers {
+    background-color: #7C83FD;
+  }
+  &Subscribed {
+    background-color: #ED8E7C;
+  }
+  &Repos {
+    background-color: #548CA8;
+  }
+  &Gists {
+    background-color: #57837B;
+  }
+}
+
+.backLink {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  &Icon {
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+  }
+  &Span {
+
+  }
+}
+
+.repoInner {
+  margin-top: 32px;
+}
+
+.repoItem {
+  margin-bottom: 15px;
+  color: var(--accent);
+  padding: 15px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+}

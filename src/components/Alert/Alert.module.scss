@@ -1,0 +1,28 @@
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  min-height: 50px;
+  &Text {
+    font-size: 20px;
+    color: #fff;
+  }
+  &Button {
+    font-size: 22px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  &.success {
+    background-color: #50CB93;
+  }
+  &.warning {
+    background-color: #ECD662;
+  }
+  &.error {
+    background-color: #D54C4C;
+  }
+}
